@@ -1,0 +1,5 @@
+{
+"ROOT__TITLE" : "hello world {{age}}",
+"ROOT__SUBTITLE" : "hello world {{name}}",
+"LOGIN__LOG-IN_TITLE": "hello login"
+}
