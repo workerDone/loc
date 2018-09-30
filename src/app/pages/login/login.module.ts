@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {TranslateModule} from '@ngx-translate/core';
-
+import {
+  MatIconModule
+} from '@angular/material';
 import { LoginRoutingModule } from './login-routing.module';
 import { LogInComponent } from './components/log-in/log-in.component';
 
@@ -9,7 +11,8 @@ import { LogInComponent } from './components/log-in/log-in.component';
   imports: [
     CommonModule,
     LoginRoutingModule,
-    TranslateModule
+    TranslateModule,
+    MatIconModule,
   ],
   declarations: [LogInComponent]
 })
