@@ -3,3 +3,28 @@
 </p>
 <mat-icon class="change-ico__icon" svgIcon="n"></mat-icon>
 <!-- <mat-icon class="change-ico__icon"  fontIcon="fa-n"></mat-icon> -->
+<form *ngIf="form" [formGroup]="form" class="form">
+  <mat-form-field class="form-field">
+    <input type="email" class="form-field" matInput placeholder="Your E-mail" formControlName="email">
+  </mat-form-field>
+  <mat-form-field class="form-field">
+    <input type="text" class="form-field" matInput placeholder="Phone number" formControlName="phone_number" >
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="form-field">
+    <input type="text" class="form-field" matInput placeholder="Phone ext" formControlName="phone_ext" >
+  </mat-form-field>
+  <mat-form-field class="form-field">
+    <input type="text" class="form-field" matInput placeholder="Subject" formControlName="subject" >
+  </mat-form-field>
+  <br>
+  <mat-form-field class="form-field">
+    <textarea matInput type="text" placeholder="Description" formControlName="description" ></textarea>
+  </mat-form-field>
+
+  <button (click)="sendEmail()">
+    Send
+  </button>
+
+</form>
